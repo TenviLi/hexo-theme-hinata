@@ -1,0 +1,32 @@
+{
+    "name": "hexo-theme-hinata",
+    "version": "0.0.1",
+    "description": "🌺Hinata was a theme for Ghost 2.x, now supports Hexo",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gylidian/hexo-theme-hinata.git"
+    },
+    "keywords": [
+        "hexo-theme",
+        "hexo",
+        "theme",
+        "hinata",
+        "hexo-theme-hinata",
+        "blog"
+    ],
+    "author": "gylidian",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gylidian/hexo-theme-hinata/issues"
+    },
+    "homepage": "https://gylidian.github.io",
+    "devDependencies": {
+        "cz-conventional-changelog": "^3.0.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
