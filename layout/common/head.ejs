@@ -12,6 +12,19 @@
 <link rel="dns-prefetch" href="//s1.wxzxzj.com" />
 <link rel="dns-prefetch" href="//img1.wxzxzj.com/" /> -->
 
+<% if (has_config('favicon')) { %>
+<link
+    rel="icon"
+    href="<%- url_for(get_config('favicon')) %>"
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="<%- url_for(get_config('favicon')) %>"
+/>
+<% } %>
+
 <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 <script
     type="text/javascript"
