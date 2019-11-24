@@ -1,0 +1,16 @@
+<div id="slideshow" class="slideshow">
+    <% posts.filter(post => has_thumbnail(post)).sort('date', -1).limit(5).each(post => { %>
+        <!-- {{#if feature_image}} -->
+            <div class="slide query" >
+                <div class="bg-overlay" url="<%= get_thumbnail(post) %>"></div>
+                <blockquote>
+                    <p><%= post.title %></p>
+                    <a class="view-details noSwipe" href="<%- url_for((post.link?post.link:post.path)) %>">
+                      阅读详情 <svg style="margin-top:-2px;" class="icon chevron-right"><use xlink:href="#icon-chevron-right"></use></svg>
+                    </a>
+                </blockquote>
+            </div>
+        <!-- {{/if}} -->
+    <% } %>
+    <div class="circle-mask"></div>
+</div>
