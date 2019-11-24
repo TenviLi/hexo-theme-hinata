@@ -9,8 +9,8 @@
           <img src="https://img1.wxzxzj.com/vuedf926d9e80d3eb33c504228105f872e3c.png" />
         </div>
         <div class="quote"><%= get_config('title') %></div>
-        <% if (has_config('navbar.menu')) { %>
-          <% for (let i in get_config('navbar.menu')) { let menu = get_config('navbar.menu')[i]; %>
+        <% if (has_config('navigation')) { %>
+          <% for (let i in get_config('navigation')) { let menu = get_config('navigation')[i]; %>
           <a href="<%- url_for(menu) %>"><%= i %></a>
           <% } %>
         <% } %>

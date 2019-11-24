@@ -12,4 +12,5 @@ module.exports = {
         [defaultValue]: version
     },
     ...require('./meta.spec'),
+    navigation: require('./navigation.spec'),
 };
