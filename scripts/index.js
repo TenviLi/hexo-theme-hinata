@@ -1,4 +1,5 @@
 require("../includes/helpers/config")(hexo);
+require("../includes/helpers/override")(hexo);
 require("../includes/helpers/page")(hexo);
 
 // Debug helper
