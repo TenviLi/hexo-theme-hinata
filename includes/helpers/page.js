@@ -6,6 +6,8 @@
  *     <%- is_tags(page) %>
  *     <%- page_title(page) %>
  *     <%- meta(post) %>
+ *     <%- has_thumbnail(post) %>
+ *     <%- get_thumbnail(post) %>
  */
 const { stripHTML } = require("hexo-util");
 
@@ -85,5 +87,19 @@ module.exports = function(hexo) {
             return "<meta " + entityArray.join(" ") + " />";
         });
         return metaDOMArray.join("\n");
+    });
+
+    hexo.extend.helper.register('has_thumbnail', function (post) {
+        const getConfig = hexo.extend.helper.get('get_config').bind(this);
+        const allowThumbnail = getConfig('article.thumbnail', true);
+        if (!allowThumbnail) {
+            return false;
+        }
+        return post.hasOwnProperty('thumbnail') && post.thumbnail;
+    });
+
+    hexo.extend.helper.register('get_thumbnail', function (post) {
+        const hasThumbnail = hexo.extend.helper.get('has_thumbnail').bind(this)(post);
+        return this.url_for(hasThumbnail ? post.thumbnail : 'images/thumbnail.svg');
     });
 };
