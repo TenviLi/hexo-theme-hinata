@@ -12,6 +12,15 @@
 <link rel="dns-prefetch" href="//s1.wxzxzj.com" />
 <link rel="dns-prefetch" href="//img1.wxzxzj.com/" /> -->
 
+<% if (has_config('rss')) { %>
+<link
+    rel="alternative"
+    href="<%- get_config('rss') %>"
+    title="<%= get_config('title') %>"
+    type="application/atom+xml"
+/>
+<% } %> 
+
 <% if (has_config('favicon')) { %>
 <link
     rel="icon"
