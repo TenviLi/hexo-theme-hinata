@@ -34,3 +34,7 @@ footer:
         Demo3: https://github.com/gylidian
         Demo4: https://github.com/gylidian
         Demo5: https://github.com/gylidian
+# Article display settings
+article:
+  # Whether to show article thumbnail images
+  thumbnail: true
