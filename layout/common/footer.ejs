@@ -1,0 +1,46 @@
+<footer class="site-footer clearfix">
+    <div class="container">
+        <div class="link-wrap">
+            <div class="link-item">
+                <a
+                    href="https://github.com/gylidian/hexo-theme-hinata"
+                    target="_blank"
+                    class="ft-logo"
+                ></a>
+                ❤️ Designed by gylidian
+                <p>&copy; <%= date(new Date(), 'YYYY') %> <%= get_config('author') || get_config('title') %>&nbsp;
+                    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></a></p>
+            </div>
+
+            <% if (has_config('navigation')) { %>
+            <div class="link-item">
+                <h4>Navigation</h4>
+                <ul>
+                    <% for (let i in get_config('navigation')) { let menu = get_config('navigation')[i]; %>
+                    <li><a href="<%- url_for(menu) %>"><%= i %></a></li>
+                    <% } %>
+                </ul>
+            </div>
+            <% } %>
+
+            <% if (has_config('footer')) { %>
+            <% for (let i in get_config('footer')) { let ftsec = get_config('footer')[i]; %>
+            <div class="link-item">
+                <h4><%= i %></h4>
+                <ul>
+                    <% for(let j of Object.entries(ftsec)) {
+                    <li><a href="<%- j[1] %>"><%= j[0] %></a></li>
+                    <% } %>
+                </ul>
+            <% } %>
+            <% } %>
+            <!-- <li>
+                        <a title="微信" class="wechat" href="#">Wechat
+                            <div class="qrcode"></div>
+                        </a>
+                    </li> -->
+                    <!-- <li><a href="mailto:760341479@gmail.com">Email</a></li> -->
+
+        </div>
+    </div>
+</footer>
