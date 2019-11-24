@@ -6,3 +6,10 @@ favicon: /images/favicon.ico
 rss: rss2.xml
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 logo: /images/logo.png
+# Navigation bar link settings
+navigation:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  About: /about
