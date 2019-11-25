@@ -1,9 +1,9 @@
 <% function generateReadtime(post) {
-    const words = word_count(post.content); // post._content
+    const words = word_count(post._content);
     const time = duration((words / 150.0) * 60, 'seconds');
     return `${ time.locale(get_config('language', 'en')).humanize() } 读完} (大约 ${ words } 个字)`;
 } 
-const readtime = generateReadtime(); %>
+const readtime = generateReadtime(post); %>
 <main class="content" role="main">
     <header class="main-header post-head">
         <div class="cover js-post-cover"<% if (has_thumbnail(post)) { %>url="<%= get_thumbnail(post) %>"<% } %>></div>
