@@ -37,7 +37,7 @@ const readtime = generateReadtime(post); %>
         <div class="wrap js-wrap-text"></div>
     </div>
 
-    <article class="{{post_class}} js-article">
+    <article class="post {{post_class}} js-article">
         <div class="meta-info">
             <svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg>
             <time class="post-date" datetime="<%= date_xml(post.date) %>">  <%= date(post.date) %></time>
