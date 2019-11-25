@@ -27,13 +27,14 @@ module.exports = {
             Demo5: "https://github.com/gylidian"
         }
     },
-    '*': {
-        [type]: 'object',
-        [doc]: 'Single column links settings',
-        '*': {
-            [type]: 'string',
-            [doc]: 'Path or URL to the footer column item',
+    "*": {
+        [type]: "object",
+        [doc]: "Single column links settings",
+        "*": {
+            [type]: "string",
+            [doc]: "Path or URL to the footer column item",
             [required]: true,
-            [defaultValue]: 'https://github.com/gylidian'
-        },
+            [defaultValue]: "https://github.com/gylidian"
+        }
+    }
 };
