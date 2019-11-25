@@ -38,3 +38,5 @@ footer:
 article:
   # Whether to show article thumbnail images
   thumbnail: true
+  # Whether to show estimate article reading time
+  readtime: true

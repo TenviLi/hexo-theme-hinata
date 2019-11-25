@@ -7,5 +7,10 @@ module.exports = {
         [type]: 'boolean',
         [doc]: 'Whether to show article thumbnail images',
         [defaultValue]: true
+    },
+    readtime: {
+        [type]: 'boolean',
+        [doc]: 'Whether to show estimate article reading time',
+        [defaultValue]: true
     }
 };
