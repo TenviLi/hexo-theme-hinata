@@ -29,6 +29,7 @@
     "homepage": "https://gylidian.github.io",
     "devDependencies": {
         "cz-conventional-changelog": "^3.0.2",
+        "ejs-lint": "^0.3.0",
         "gulp": "^3.2.3",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-less": "^4.0.1",
