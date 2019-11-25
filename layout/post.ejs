@@ -1,3 +1,4 @@
+<% const post = page; %>
 <% function generateReadtime(post) {
     const words = word_count(post._content);
     const time = duration((words / 150.0) * 60, 'seconds');
