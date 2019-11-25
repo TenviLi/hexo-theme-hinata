@@ -1,4 +1,4 @@
-<article class="{{post_class}}">
+<article class="post {{post_class}}">
     <% if (has_thumbnail(post)) { %>
         <a  href="<%- url_for(post.link ? post.link : post.path) %>" class="cover js-post-normal-cover" url="<%= get_thumbnail(post) %>">
             <time class="post-date" datetime="<%= date_xml(post.date) %>"> <svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg> <%= date(post.date) %></time>
