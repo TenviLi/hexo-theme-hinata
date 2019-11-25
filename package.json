@@ -1,6 +1,6 @@
 {
     "name": "hexo-theme-hinata",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "🌺Hinata was a theme for Ghost 2.x, now supports Hexo",
     "scripts": {
         "build": "gulp",

@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/gylidian/hexo-theme-hinata/compare/v0.0.3...v0.0.4) (2019-11-25)
+
+
+### Features
+
+* **helpers/site:** add helper `duration` ([32de132](https://github.com/gylidian/hexo-theme-hinata/commit/32de132c7c909924719c2f857d1131aa53be5fcf))
+* **helpers/site:** add helper `word_count`, it can count the number of words in an article ([5aaff6b](https://github.com/gylidian/hexo-theme-hinata/commit/5aaff6b531bfc9f35959cf3144bd1eb44f3534dc))
+
+
+### Bug Fixes
+
+* **footer.spec:** fix ReferenceError: required is not defined ([9b5e649](https://github.com/gylidian/hexo-theme-hinata/commit/9b5e649c704b463f87f9573fde3165f42cfef913))
+* **footer.spec:** fix Unexpected token ; ([177a92f](https://github.com/gylidian/hexo-theme-hinata/commit/177a92f796ba78419ad94108788257aedbb69499))
+* **helpers:** fix ReferenceError: hexo is not defined in override.js ([df41fe6](https://github.com/gylidian/hexo-theme-hinata/commit/df41fe685a93a0a9c042ab95285d7dca28fcc804))
+* **helpers:** remove the requirement of module 'hexo-util' in page.js ([5331d02](https://github.com/gylidian/hexo-theme-hinata/commit/5331d020dee5b4080d9589a40e573795166e9995))
+* **layout:** add CSS classes ([6589094](https://github.com/gylidian/hexo-theme-hinata/commit/658909464b572a7a68cca733a53432c9b64cb7fb))
+* **layout:** change "slideshow" in "index" from "post" to "posts"` ([7434361](https://github.com/gylidian/hexo-theme-hinata/commit/7434361918dc20121ed7da728f972928720c604f))
+* **layout:** fix Error: Partial common/scripts does not exist. (in layout.ejs) ([25136b5](https://github.com/gylidian/hexo-theme-hinata/commit/25136b50be8ac095f27a6d79e84de67d0c79aa22))
+* **layout:** fix ReferenceError: posts is not defined, in index&slideshow ([9f0581d](https://github.com/gylidian/hexo-theme-hinata/commit/9f0581df7a1aef7a49d21180844e501350ba29ae))
+* **layout:** remove the extra '}' displayed next to word_count ([2b46ebc](https://github.com/gylidian/hexo-theme-hinata/commit/2b46ebc03afdcd15e34cfb34e8f68f7ac7eb16a2))
+* **layout/common/footer:** fix Error: Could not find matching close tag for "<%" ([9e2c47d](https://github.com/gylidian/hexo-theme-hinata/commit/9e2c47d7bcacdc7f5d20289a2a5c550441a9df9e))
+* **layout/common/footer:** fix the culprit for the misplacement of footer links ([8aa4275](https://github.com/gylidian/hexo-theme-hinata/commit/8aa4275348c6f326a48fd5eecc916e7f69cfa1e3))
+* **layout/index/article:** fix the culprit for the misplacement of article list layout ([05c3c01](https://github.com/gylidian/hexo-theme-hinata/commit/05c3c01485649845fc61d36617b7cdf13ef387c0))
+* **layout/index/slideshow:** fix Partial index/slideshow does not exist. (in index.ejs) ([f5f4fb2](https://github.com/gylidian/hexo-theme-hinata/commit/f5f4fb248a780d6bc7ef61fb30f3d5ecb26fee71))
+* **layout/post:** change `posts` to `site.posts` ([ce20025](https://github.com/gylidian/hexo-theme-hinata/commit/ce20025b9ed82f855c5f582c9f0b20f91167375f))
+* **layout/post:** fix Error: Cannot read property '_content' of undefined ([07579b4](https://github.com/gylidian/hexo-theme-hinata/commit/07579b4c7dd52209e5d19d80e3e06bbc915b6ca3))
+* **layout/post:** fix Error: post is not defined ([e3aed1c](https://github.com/gylidian/hexo-theme-hinata/commit/e3aed1c18b65be5253522128d08005b824f4aa6b))
+* **layout/post:** fix SyntaxError: missing ) after argument list ([83c60b5](https://github.com/gylidian/hexo-theme-hinata/commit/83c60b50e4b5c5172c4656e0fb41840f35e33915))
+* **layout/post:** fix the fucking error about `post.content` & `post._content` ([e1f7491](https://github.com/gylidian/hexo-theme-hinata/commit/e1f7491f1e904803f8539a1097ffcfb644d5dc10))
+* **layout/post:** fix the missing { ([f971261](https://github.com/gylidian/hexo-theme-hinata/commit/f971261631722bd385dbeab0618634c6bfbb837e))
+* **layout/post/read-next:** it is found that 'list tags()' will cause serious typographical disorder ([8c9fdaf](https://github.com/gylidian/hexo-theme-hinata/commit/8c9fdafd61666d99b0412d844121e6f1c71f5735))
+* **spec:** fix ReferenceError: required is not defined in sns.spec ([cecc6c9](https://github.com/gylidian/hexo-theme-hinata/commit/cecc6c9e5274b489743000bdd7e74caa871be53f))
+
 ### [0.0.3](https://github.com/gylidian/hexo-theme-hinata/compare/v0.0.2...v0.0.3) (2019-11-25)
 
 
