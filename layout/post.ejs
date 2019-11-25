@@ -69,36 +69,10 @@ const readtime = generateReadtime(post); %>
         <!--end disqus-->
     </article>
 
-    <aside class="read-next">
-        <div class="blur-bannar">
-        </div>
-        <div class="container">
-            <h5 class="suggest-read-title"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg> 推荐阅读</h5>
+    <% if (post.categories && post.categories.length) { %>
+        <%- partial('post/read-next', { primary_categories: post.categories } ) %>
+    <% } %>
 
-            <% if (post.categories && post.categories.length) { %>
-            <%  const s = new Set(), primary_categories =  post.categories;
-                primary_categories.forEach(item=>{s.add(item.name)});
-                const hasSameCategories = cs => !!cs.filter(x => !s.has(x)); %>
-            <% site.posts.filter(p => has_thumbnail(p) && (p.categories && p.categories.length) && hasSameCategories(p.categories)).sort('date', -1).limit(8).each(recommend_post => { %>
-                    <a class="read-next-story "  href="<%- url_for((recommend_post.link?recommend_post.link:recommend_post.path)) %>">
-                        <div class="cover"<% if (has_thumbnail(recommend_post)) { %>style="background-image: url(<%= get_thumbnail(recommend_post) %>)"<% } %>>
-                            <div class="post-tag">
-                                <%- list_tags(recommend_post.tags, {
-                                class: 'has-link-grey ',
-                                show_count: false,
-                                style: 'link'
-                                }) %>
-                            </div>
-                        </div>
-                        <section>
-                            <time class="post-date" datetime="<%= date_xml(recommend_post.date) %>">  <%= date(recommend_post.date) %></time>
-                            <h5><%= recommend_post.title %></h5>
-                        </section>
-                    </a>
-            <% }); %>
-            <% } %>
-        </div>
-    </aside>
 
     <% if (has_config('sns')) { %>
        <%- partial('post/sns') %>
