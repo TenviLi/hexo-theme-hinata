@@ -1,5 +1,5 @@
 <div id="slideshow" class="slideshow">
-    <% posts.filter(post => has_thumbnail(post)).sort('date', -1).limit(5).each(post => { %>
+    <% page.posts.filter(post => has_thumbnail(post)).sort('date', -1).limit(5).each(post => { %>
         <!-- {{#if feature_image}} -->
             <div class="slide query" >
                 <div class="bg-overlay" url="<%= get_thumbnail(post) %>"></div>
