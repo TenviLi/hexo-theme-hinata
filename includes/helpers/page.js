@@ -9,8 +9,6 @@
  *     <%- has_thumbnail(post) %>
  *     <%- get_thumbnail(post) %>
  */
-const { stripHTML } = require("hexo-util");
-
 module.exports = function(hexo) {
     function trim(str) {
         return str
