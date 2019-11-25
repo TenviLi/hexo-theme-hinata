@@ -2,10 +2,19 @@
  * Helper functions related the site properties.
  *
  * @example
-*     <%- word_count(content) %>
+ *    <%- duration() %>
+ *    <%- word_count(content) %>
  */
+const moment = require('moment');
 
 module.exports = function (hexo) {
+    /**
+     * Export moment.duration
+     */
+    hexo.extend.helper.register('duration', function () {
+        return moment.duration.apply(moment, arguments);
+    });
+
     /**
      * Get the word count of a paragraph.
      */
