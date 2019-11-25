@@ -73,10 +73,11 @@ const readtime = generateReadtime(); %>
         </div>
         <div class="container">
             <h5 class="suggest-read-title"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg> 推荐阅读</h5>
+
             <% if (post.categories && post.categories.length) { %>
-<% const primary_categories =  post.categories;
-  const difference = (a, b) => { const s = new Set(b); return a.filter(x => !s.has(x)) }; 
-%>
+            <% const primary_categories =  post.categories;
+              const difference = (a, b) => { const s = new Set(b); return a.filter(x => !s.has(x)) }; 
+            %>
             <% posts.filter(p => has_thumbnail(p) && (p.categories && p.categories.length) && difference(p.categories, primary_categories).length).sort('date', -1).limit(8).each(recommend_post => { %>
                     <a class="read-next-story "  href="<%- url_for((post.link?post.link:post.path)) %>">
                         <div class="cover"<% if (has_thumbnail(recommend_post)) { %>style="background-image: url(<%= get_thumbnail(recommend_post) %>)"<% } %>>
@@ -93,6 +94,7 @@ const readtime = generateReadtime(); %>
                             <h5><%= recommend_post.title %></h5>
                         </section>
                     </a>
+            <% } %>
             <% } %>
         </div>
     </aside>
