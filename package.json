@@ -2,7 +2,13 @@
     "name": "hexo-theme-hinata",
     "version": "0.0.3",
     "description": "🌺Hinata was a theme for Ghost 2.x, now supports Hexo",
-    "scripts": {},
+    "scripts": {
+        "build": "gulp",
+        "version:p": "standard-version -r patch",
+        "version:m": "standard-version -r minor",
+        "publish": "git push --follow-tags origin master && npm publish",
+        "cz": "git cz"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gylidian/hexo-theme-hinata.git"
