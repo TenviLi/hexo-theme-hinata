@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/gylidian/hexo-theme-hinata/compare/v0.0.2...v0.0.3) (2019-11-25)
+
+
+### Features
+
+* **config:** make config support article.readtime setting ([4f1a572](https://github.com/gylidian/hexo-theme-hinata/commit/4f1a5727e793e9edf921eff9090b4e1c333bb6d4))
+* **config:** support the setting for article.thumbnail ([a0c08f9](https://github.com/gylidian/hexo-theme-hinata/commit/a0c08f99671f007597fc88f33f4c8bd59722d7e6))
+* **helper:** add helpers for post: `has_thumbnail`,`get_thumbnail` ([54c42ef](https://github.com/gylidian/hexo-theme-hinata/commit/54c42ef537fb9414d4dc226c69fae390bf1268b7))
+* **layout:** completed the article part of the loop of the homepage layout ([ffcc417](https://github.com/gylidian/hexo-theme-hinata/commit/ffcc4177360e4a01bf9c3490f07b44c600dc7386))
+* **layout:** completed the general layout of the index page ([4a879f5](https://github.com/gylidian/hexo-theme-hinata/commit/4a879f51b791e18f4e81c474c50d6caed6b0cb18))
+* **layout:** completed the slideshow part of the homepage layout ([7709b8a](https://github.com/gylidian/hexo-theme-hinata/commit/7709b8a12cd766a9078a9a122bd10b6e9da3522b))
+* **layout:** finished layout of post ([be55ddf](https://github.com/gylidian/hexo-theme-hinata/commit/be55ddf59f6381b70315499825ece3048d3a46c8))
+* **layout:** paginator ojbk ([863c9d1](https://github.com/gylidian/hexo-theme-hinata/commit/863c9d1cc57c47760f8c85349ae47a563c93bd96))
+* **layout&config:** support set sns icon links ([77d5462](https://github.com/gylidian/hexo-theme-hinata/commit/77d54621f44b20ef96945d8a360cabe2da53bc15))
+
 ### 0.0.2 (2019-11-24)
 
 
