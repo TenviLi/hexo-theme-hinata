@@ -1,4 +1,4 @@
-const { doc, type, defaultValue } = require("../common/utils").descriptors;
+const { doc, type, defaultValue, required } = require("../common/utils").descriptors;
 
 module.exports = {
     [type]: "object",
