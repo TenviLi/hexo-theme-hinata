@@ -79,8 +79,8 @@ const readtime = generateReadtime(post); %>
             <% const primary_categories =  post.categories;
               const difference = (a, b) => { const s = new Set(b); return a.filter(x => !s.has(x)) }; 
             %>
-            <% posts.filter(p => has_thumbnail(p) && (p.categories && p.categories.length) && difference(p.categories, primary_categories).length).sort('date', -1).limit(8).each(recommend_post => { %>
-                    <a class="read-next-story "  href="<%- url_for((post.link?post.link:post.path)) %>">
+            <% site.posts.filter(p => has_thumbnail(p) && (p.categories && p.categories.length) && difference(p.categories, primary_categories).length).sort('date', -1).limit(8).each(recommend_post => { %>
+                    <a class="read-next-story "  href="<%- url_for((recommend_post.link?recommend_post.link:recommend_post.path)) %>">
                         <div class="cover"<% if (has_thumbnail(recommend_post)) { %>style="background-image: url(<%= get_thumbnail(recommend_post) %>)"<% } %>>
                             <div class="post-tag">
                                 <%- list_tags(recommend_post.tags, {
