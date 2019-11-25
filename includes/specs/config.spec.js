@@ -14,5 +14,6 @@ module.exports = {
     ...require('./meta.spec'),
     navigation: require('./navigation.spec'),
     footer: require('./footer.spec'),
-    article: require('./article.spec')
+    article: require('./article.spec'),
+    sns: require('./sns.spec')
 };

@@ -40,3 +40,20 @@ article:
   thumbnail: true
   # Whether to show estimate article reading time
   readtime: true
+# Sns Link icon settings
+sns: 
+  facebook: 
+    icon: fb
+    url: https://www.facebook.com
+  google plus: 
+    icon: gp
+    url: https://plus.google.com
+  github:
+    icon: github
+    url: https://github.com/gylidian
+  instagram:
+    icon: ins
+    url: https://www.instagram.com
+  behance:
+    icon: be
+    url: https://www.behance.net

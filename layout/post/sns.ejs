@@ -1,0 +1,13 @@
+<% if (has_config('sns')) { %>
+<div class="sns-icon-group">
+    <% const links = get_config('navbar.links'); %>
+    <% for (const name in links) {
+        const link = links[name]; %>
+    <a class="sns-icon <%= link.icon %>" title="<%= name %>" href="<%- link.url %>">
+        <i class="icon2 icon-<%= link.icon %>"></i>
+    </a>
+    <% } %>
+
+    <p class="quote">You Can Speak <strong>"Hi"</strong> to Me in Those Ways</p>
+</div>
+<% } %>
