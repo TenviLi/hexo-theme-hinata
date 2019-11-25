@@ -1,13 +1,75 @@
-<% if (has_config('sns')) { %>
-<div class="sns-icon-group">
-    <% const links = get_config('navbar.links'); %>
-    <% for (const name in links) {
-        const link = links[name]; %>
-    <a class="sns-icon <%= link.icon %>" title="<%= name %>" href="<%- link.url %>">
-        <i class="icon2 icon-<%= link.icon %>"></i>
-    </a>
-    <% } %>
+<div class="social-sites">
+    <div class="blur-circle sm">
+        <svg width="150px" height="150px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient1" gradientTransform="rotate(35)">
+                    <stop offset="0%"  stop-color="#ab7bf6" />
+                    <stop offset="95%" stop-color="#7022ed" />
+                </linearGradient>
+                <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                </filter>
+            </defs>
+            <circle cx="50" fill="url(#gradient1)" filter="url(#f1)" cy="50" r="40"/>
+        </svg>
+    </div>
+    <div class="blur-circle md">
+        <svg width="180px" height="180px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient1" gradientTransform="rotate(35)">
+                    <stop offset="0%"  stop-color="#ab7bf6" />
+                    <stop offset="95%" stop-color="#7022ed" />
+                </linearGradient>
+                <filter id="f1">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                </filter>
+            </defs>
+            <circle cx="50" fill="url(#gradient1)" filter="url(#f1)" cy="50" r="35"/>
+        </svg>
+    </div>
+    <div class="blur-circle lg">
+        <svg width="280px" height="280px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient2" gradientTransform="rotate(35)">
+                    <stop offset="0%"  stop-color="#c471ed" />
+                    <stop offset="95%" stop-color="#3F5EFB" />
+                </linearGradient>
+                <filter id="f3">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                </filter>
+            </defs>
+            <circle cx="50" fill="url(#gradient2)" filter="url(#f3)" cy="50" r="45"/>
+        </svg>
+    </div>
+    <div class="blur-circle sm">
+        <svg width="120px" height="120px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient4">
+                    <stop offset="5%" stop-color="#5573e3" />
+                    <stop offset="95%"  stop-color="#7022ed" />
+                </linearGradient>
+                <filter id="f4" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic2" stdDeviation="2" />
+                </filter>
+            </defs>
+            <circle cx="50" fill="url(#gradient4)" filter="url(#f4)" cy="50" r="35"/>
+        </svg>
+    </div>
+    <div class="blur-circle sm">
+        <svg width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" fill="url(#gradient1)" filter="url(#f1)" cy="50" r="40"/>
+        </svg>
+    </div>
 
-    <p class="quote">You Can Speak <strong>"Hi"</strong> to Me in Those Ways</p>
+    <div class="sns-icon-group">
+        <% const links = get_config('sns'); %>
+        <% for (const name in links) {
+            const link = links[name]; %>
+        <a class="sns-icon <%= link.icon %>" title="<%= name %>" href="<%- link.url %>">
+            <i class="icon2 icon-<%= link.icon %>"></i>
+        </a>
+        <% } %>
+
+        <p class="quote">You Can Speak <strong>"Hi"</strong> to Me in Those Ways</p>
+    </div>
 </div>
-<% } %>
